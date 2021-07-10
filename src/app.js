@@ -1,13 +1,13 @@
 import React from "react";
-import "./app.css";
 
-import Navbar from './components/Navbar'
+import GameMenu from './components/GameMenu'
+
+import './app.css'
 
 export default function App() {
     return (
         <>
-            <Navbar />
-            <h1>hi</h1>
+            <GameMenu />
         </>
     )
 }

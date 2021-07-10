@@ -1,4 +1,9 @@
-* {
+body {
     margin: 0;
-    padding: 0;
+    background-image: linear-gradient(135deg, #243447, #141d26);
+    padding-top: 150px;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+    font-weight: bold;
 }
