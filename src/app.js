@@ -1,6 +1,6 @@
 import React from "react";
 
-import GameMenu from './components/GameMenu'
+import GameMenu from './GameMenu'
 
 import './app.css'
 
