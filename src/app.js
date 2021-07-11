@@ -1,13 +1,19 @@
 import React from "react";
-
-import GameMenu from './GameMenu'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import HomePage from "./HomePage";
+import Navbar from "./components/Navbar";
+import Home from './pages'
 
 import './app.css'
 
 export default function App() {
     return (
-        <>
-            <GameMenu />
-        </>
+        <Router>
+            <Navbar />
+            <Switch>
+                <Route path="/" exact component={Home} />
+            </Switch>
+            <HomePage />
+        </Router>
     )
 }

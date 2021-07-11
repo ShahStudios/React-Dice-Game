@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import './app.css'
 
-import StarIcon from '@material-ui/icons/Star';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-
-export default class GameMenu extends React.Component {
+export default class HomePage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
