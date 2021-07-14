@@ -6,11 +6,12 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to="/">
-                    <h1>Logo</h1>
+                    <h1>DICE GAME</h1>
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                    <NavBtnLink to="/signup">Sign In</NavBtnLink>
+                <NavLink to="/">High Scores</NavLink>
+                <NavLink to="/signup">Sign In</NavLink>
                 </NavMenu>
             </Nav>
         </>

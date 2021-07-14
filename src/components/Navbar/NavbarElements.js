@@ -19,9 +19,6 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    &.active {
-        color: #15cdfc;
-    }
 `
 
 export const Bars = styled(FaBars)`
@@ -42,8 +39,8 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    // margin-right: -24px;
     margin-right: 24px;
+    color: #000;
 
     @media screen and (max-width: 768px) {
         display: none;
