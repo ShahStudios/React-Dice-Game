@@ -14,31 +14,22 @@ import {
 
 class GameScreen extends React.Component {
     constructor(props) {
-        super(props);
-        this.state = { 
-            active: "",
-            display: 'none'
-
-        };
+        super(props)
     }
+
+    startBtnClick = () => {
+        console.log('hi')
+    }
+
 
     render() {
         const styles = {
-            startBtnStyle: {
+            disableContent: {
                 display: 'none'
             },
-            rollBtn2xStyle: {
-                display: 'none'
-            },
-            rollBtnStyle2x: {
-                display: 'none'
-            },
-            resetBtnStyle: {
-                display: 'none'
-            }
         }
+        const { disableContent } = styles
 
-        const { startBtnStyle, rollBtnStyle, rollBtnStyle2x, resetBtnStyle } = styles
 
         return (
             <Container>
@@ -65,10 +56,10 @@ class GameScreen extends React.Component {
                 </Players>
 
                 <SampleWrapper>
-                    <StandardButton style={startBtnStyle}>Start Game 🎮</StandardButton>
-                    <StandardButton style={rollBtnStyle}>Roll Dice 🎲</StandardButton>
-                    <StandardButton style={rollBtnStyle2x}>Roll Dice 2x😈</StandardButton>
-                    <StandardButton style={resetBtnStyle}>Reset Game 🔁</StandardButton>
+                    <StandardButton id="startBtn" onClick={this.startBtnClick}>Start Game 🎮</StandardButton>
+                    <StandardButton id="rollBtn" style={disableContent}>Roll Dice 🎲</StandardButton>
+                    <StandardButton id="rollBtn2x" style={disableContent}>Roll Dice 2x😈</StandardButton>
+                    <StandardButton id="resetBtn" style={disableContent}>Reset Game 🔁</StandardButton>
                 </SampleWrapper>
             </Container>
         );
