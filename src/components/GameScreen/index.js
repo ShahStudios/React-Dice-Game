@@ -9,16 +9,37 @@ import {
     StandardButton,
     Dice,
     Player1,
-    Player2
+    Player2,
 } from "./GameElements";
 
 class GameScreen extends React.Component {
     constructor(props) {
-        super(props)
-        this.state = { active: '' }
+        super(props);
+        this.state = { 
+            active: "",
+            display: 'none'
+
+        };
     }
 
     render() {
+        const styles = {
+            startBtnStyle: {
+                display: 'none'
+            },
+            rollBtn2xStyle: {
+                display: 'none'
+            },
+            rollBtnStyle2x: {
+                display: 'none'
+            },
+            resetBtnStyle: {
+                display: 'none'
+            }
+        }
+
+        const { startBtnStyle, rollBtnStyle, rollBtnStyle2x, resetBtnStyle } = styles
+
         return (
             <Container>
                 <StarterHeading id="message">Player 1 Turn</StarterHeading>
@@ -43,15 +64,14 @@ class GameScreen extends React.Component {
                     </Player2>
                 </Players>
 
-
                 <SampleWrapper>
-                    <StandardButton id="startBtn">Start Game 🎮</StandardButton>
-                    <StandardButton id="rollBtn">Roll Dice 🎲</StandardButton>
-                    <StandardButton id="rollBtn2x">Roll Dice 2x😈</StandardButton>
-                    <StandardButton id="resetBtn">Reset Game 🔁</StandardButton>
+                    <StandardButton style={startBtnStyle}>Start Game 🎮</StandardButton>
+                    <StandardButton style={rollBtnStyle}>Roll Dice 🎲</StandardButton>
+                    <StandardButton style={rollBtnStyle2x}>Roll Dice 2x😈</StandardButton>
+                    <StandardButton style={resetBtnStyle}>Reset Game 🔁</StandardButton>
                 </SampleWrapper>
             </Container>
-        )
+        );
     }
 }
 
