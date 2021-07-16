@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, StarterHeading, SampleWrapper, StandardButton } from './StartElements'
+import { Link } from 'react-router-dom'
 
 const StartScreen = () => {
     return (
@@ -7,8 +8,8 @@ const StartScreen = () => {
             <Container>
                 <StarterHeading>Dice Game </StarterHeading>
                 <SampleWrapper>
-                        <StandardButton>Start Game 🎲</StandardButton>
-                        <StandardButton>High Scores 📈</StandardButton>
+                <Link to="/startgame"><StandardButton>Enter Lobby 🎲</StandardButton></Link>
+                <Link to="/highscores"><StandardButton>High Scores 📈</StandardButton></Link>
                 </SampleWrapper>
             </Container>
         </>

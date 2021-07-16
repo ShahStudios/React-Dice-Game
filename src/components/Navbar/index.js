@@ -10,8 +10,6 @@ const Navbar = () => {
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                <NavLink to="/startgame">Start Game</NavLink>
-                <NavLink to="/highscores">High Scores</NavLink>
                 <NavLink to="/signin">Sign In</NavLink>
                 </NavMenu>
             </Nav>
